@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Typing from "react-typing-animation";
 import Button from "../button";
 import "./style.css";
 
@@ -43,16 +44,22 @@ class Header extends Component {
     return (
       <header>
         <div className="header-content">
-          <h1>Västerås Coffee & Code</h1>
-          <div className="info">
-            <h2>65+ members</h2>
-            <h2>|</h2>
-            <h2>Västerås, Sweden</h2>
-            <h2>|</h2>
-            <h2>Every Wednesday 6 PM</h2>
-          </div>
+          <h1>Coffee & Code</h1>
+          <br />
+          <Typing>
+            <h2>
+              Meetup-group for developers and anyone interested in programming.
+            </h2>
+          </Typing>
+          <br />
+          <br />
+
           <div className="button-wrapper">
-            <a href="https://www.meetup.com/Vasteras-Coffee-and-Code/">
+            <a
+              href="https://www.meetup.com/Vasteras-Coffee-and-Code/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button>Join Meetup Group</Button>
             </a>
 
@@ -64,7 +71,7 @@ class Header extends Component {
                 this.joinSlack();
               }}
             >
-              <Button>Join Slack Group</Button>
+              <Button secondary>Join Slack Group</Button>
             </div>
           </div>
 

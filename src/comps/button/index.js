@@ -3,8 +3,12 @@ import "./style.css";
 
 class Button extends Component {
   render() {
-    const { children } = this.props;
-    return <button className="button">{children}</button>;
+    const { secondary, children } = this.props;
+    return (
+      <button className={secondary ? "buttonSecondary" : "button"}>
+        {children}
+      </button>
+    );
   }
 }
 

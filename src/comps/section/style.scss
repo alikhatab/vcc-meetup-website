@@ -1,0 +1,25 @@
+section {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+
+  h1 {
+    font-size: 35px;
+    letter-spacing: 1px;
+  }
+
+  .section-content {
+    width: 100%;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
