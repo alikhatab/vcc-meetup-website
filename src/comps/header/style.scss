@@ -1,0 +1,104 @@
+header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("../../images/meetup-image-min.jpg");
+  background-position: center;
+  background-size: cover;
+
+  .header-content {
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(246, 64, 97, 0.85);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 60px;
+      font-weight: bolder;
+      text-align: center;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1rem;
+      max-width: 600px;
+      width: 100%;
+      padding-bottom: 3rem;
+      @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h2 {
+        font-weight: 500;
+        opacity: 0.75;
+        font-size: 1.25em;
+        @media (max-width: 600px) {
+          text-align: center;
+          padding-top: 1rem;
+          &:nth-child(even) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .button-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      max-width: 400px;
+      justify-content: space-between;
+      width: 100%;
+      @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    h3 {
+      color: white;
+      text-align: center;
+      padding-top: 1.5rem;
+    }
+
+    .status-container {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background: mediumaquamarine;
+      color: white;
+      padding: 1rem;
+      width: 100%;
+
+      h3 {
+        font-size: 0.9em;
+        padding: 0;
+      }
+    }
+
+    .status-container-err {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background: orangered;
+      color: white;
+      width: 100%;
+      padding: 1rem;
+
+      h3 {
+        font-size: 0.9em;
+        padding: 0;
+      }
+    }
+  }
+}
