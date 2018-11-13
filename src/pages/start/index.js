@@ -44,7 +44,7 @@ class Start extends Component {
           <a
             href="https://meetup.com/Vasteras-Coffee-and-Code/events"
             target="_blank"
-            rel="noopeneer noreferrer"
+            rel="noopener noreferrer"
             className="link"
           >
             Show more meetups...
