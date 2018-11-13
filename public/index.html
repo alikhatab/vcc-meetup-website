@@ -30,11 +30,34 @@
       Coffee & Code | Meetup-group for developers and people interested in
       programming
     </title>
+    <style>
+      #preloader {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        border: 8px solid #e0e0e0;
+        border-right-color: #f63f61;
+        animation: spin 1s ease-in-out infinite;
+        position: absolute;
+        left: calc(50% - 80px);
+        top: calc(50% - 80px);
+        transform: translate(-50%, -50%);
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
 
   <body>
     <noscript> You need to enable JavaScript to run this app. </noscript>
-    <div id="root"></div>
+    <div id="root"><div id="preloader"></div></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

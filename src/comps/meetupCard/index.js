@@ -5,21 +5,24 @@ import "./style.css";
 class MeetupCard extends Component {
   render() {
     const { event } = this.props;
+    const {
+      link,
+      local_date,
+      name,
+      yes_rsvp_count,
+      rsvp_limit,
+      description
+    } = event;
 
     return (
       <div>
-        <a
-          key={event.id}
-          href={event.link}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={link} target="_blank" rel="noopener noreferrer">
           <div className="meetup-card">
             <div className="info">
               <h3>
                 <span>
                   {
-                    moment(event.local_date)
+                    moment(local_date)
                       .format("ll")
                       .split(",")[0]
                       .split(" ")[1]
@@ -27,7 +30,7 @@ class MeetupCard extends Component {
                 </span>
                 <span>
                   {
-                    moment(event.local_date)
+                    moment(local_date)
                       .format("ll")
                       .split(",")[0]
                       .split(" ")[0]
@@ -35,16 +38,16 @@ class MeetupCard extends Component {
                 </span>
               </h3>
               <div>
-                <h2>{event.name}</h2>
+                <h2>{name}</h2>
                 <h4>
-                  {event.yes_rsvp_count} people are going |{" "}
-                  {event.rsvp_limit - event.yes_rsvp_count} spots left
+                  {yes_rsvp_count} people are going |{" "}
+                  {rsvp_limit - yes_rsvp_count} spots left
                 </h4>
               </div>
             </div>
             <p>
               {/* Need to slice to remove html p tags from data */}
-              {event.description.slice(3, event.description.length - 5)}
+              {description.slice(3, description.length - 5)}
             </p>
           </div>
         </a>

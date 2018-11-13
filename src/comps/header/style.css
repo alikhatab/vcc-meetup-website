@@ -145,6 +145,7 @@ header .header-content .status-container {
   color: white;
   padding: 1rem;
   width: 100%;
+  z-index: 100;
 }
 
 header .header-content .status-container h3 {
@@ -160,6 +161,7 @@ header .header-content .status-container-err {
   color: white;
   width: 100%;
   padding: 1rem;
+  z-index: 100;
 }
 
 header .header-content .status-container-err h3 {

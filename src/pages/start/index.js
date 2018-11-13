@@ -26,16 +26,29 @@ class Start extends Component {
       });
   }
   render() {
+    const { events } = this.state;
+
     return (
       <div>
         <Header />
         <Section>
           <h1>Upcoming meetups</h1>
+
           <div className="meetups">
-            {this.state.events.map(event => (
-              <MeetupCard event={event} />
-            ))}
+            {events
+              .filter(event => events.indexOf(event) < 5)
+              .map(event => (
+                <MeetupCard key={event.id} event={event} />
+              ))}
           </div>
+          <a
+            href="https://meetup.com/Vasteras-Coffee-and-Code/events"
+            target="_blank"
+            rel="noopeneer noreferrer"
+            className="link"
+          >
+            Show more meetups...
+          </a>
         </Section>
       </div>
     );

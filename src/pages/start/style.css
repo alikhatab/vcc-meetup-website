@@ -14,4 +14,14 @@
           align-items: center;
   padding-top: 50px;
 }
+
+.link {
+  color: dodgerblue;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+.link:hover {
+  background: rgba(30, 143, 255, 0.089);
+}
 /*# sourceMappingURL=style.css.map */
