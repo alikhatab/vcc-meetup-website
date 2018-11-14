@@ -48,7 +48,8 @@ class Header extends Component {
           <br />
           <Typing>
             <h2>
-              Meetup-group for developers and anyone interested in programming.
+              Meetup-group for developers and anyone interested in general
+              programming.
             </h2>
           </Typing>
           <br />

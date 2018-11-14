@@ -6,6 +6,15 @@
   padding-top: 50px;
 }
 
+.members {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
 .link {
   color: dodgerblue;
   padding: 1rem;

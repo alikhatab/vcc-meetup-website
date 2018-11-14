@@ -11,7 +11,8 @@ class MeetupCard extends Component {
       name,
       yes_rsvp_count,
       rsvp_limit,
-      description
+      description,
+      local_time
     } = event;
 
     return (
@@ -38,7 +39,9 @@ class MeetupCard extends Component {
                 </span>
               </h3>
               <div>
-                <h2>{name}</h2>
+                <h2>
+                  {local_time} | {name}
+                </h2>
                 <h4>
                   {yes_rsvp_count} people are going |{" "}
                   {rsvp_limit - yes_rsvp_count} spots left
