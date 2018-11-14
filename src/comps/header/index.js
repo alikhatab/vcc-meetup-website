@@ -46,12 +46,12 @@ class Header extends Component {
         <div className="header-content">
           <h1>Coffee & Code</h1>
           <br />
-          <Typing>
-            <h2>
-              Meetup-group for developers and anyone interested in general
-              programming.
-            </h2>
-          </Typing>
+
+          <h2>
+            Meetup-group for developers and anyone interested in general
+            programming.
+          </h2>
+
           <br />
           <br />
 
@@ -61,7 +61,7 @@ class Header extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button>Join Meetup Group</Button>
+              <Button secondary>Join Meetup Group</Button>
             </a>
 
             <div

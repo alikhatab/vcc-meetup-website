@@ -1,5 +1,5 @@
 header {
-  min-height: 65vh;
+  min-height: 55vh;
   width: 100%;
   background-image: url("../../images/meetup-image-min.jpg");
   background-position: center;
@@ -7,10 +7,10 @@ header {
 }
 
 header .header-content {
-  min-height: 65vh;
+  min-height: 55vh;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3)));
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(67, 143, 120, 0.8)), to(rgba(67, 143, 120, 0.6)));
+  background-image: linear-gradient(to right, rgba(67, 143, 120, 0.8), rgba(67, 143, 120, 0.6));
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,17 +36,11 @@ header .header-content h1 {
 }
 
 header .header-content h2 {
-  font-size: 18px;
-  font-weight: bolder;
-  background: #050505;
+  font-size: 22px;
+  text-align: center;
   font-weight: normal;
   width: 450px;
   line-height: 30px;
-  font-family: "Fira Code", sans-serif;
-  padding: 0.3rem;
-  padding-left: 1rem;
-  border-radius: 3px;
-  color: lime;
 }
 
 header .header-content .button-wrapper {
