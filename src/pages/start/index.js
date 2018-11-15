@@ -4,7 +4,6 @@ import Header from "../../comps/header";
 import Section from "../../comps/section";
 import MeetupCard from "../../comps/meetupCard";
 import Member from "../../comps/member";
-import Preloader from "../../comps/preloader";
 import "./style.css";
 
 class Start extends Component {

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Typing from "react-typing-animation";
 import Button from "../button";
 import "./style.css";
 
