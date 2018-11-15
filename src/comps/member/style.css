@@ -1,8 +1,5 @@
 .member {
-  padding: 0.2rem;
-  border: 1px solid #d8d8d8;
   border-radius: 3px;
-  margin: 0.2rem;
 }
 
 .member .img {
@@ -10,5 +7,13 @@
   height: 50px;
   background-position: center;
   background-size: cover;
+  -webkit-transition: 0.1s ease-in-out 0s;
+  transition: 0.1s ease-in-out 0s;
+}
+
+.member .img:hover {
+  -webkit-transition: 0.1s ease-in-out 0s;
+  transition: 0.1s ease-in-out 0s;
+  opacity: 0.5;
 }
 /*# sourceMappingURL=style.css.map */

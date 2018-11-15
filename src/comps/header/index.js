@@ -45,15 +45,10 @@ class Header extends Component {
       <header>
         <div className="header-content">
           <h1>Coffee & Code</h1>
-          <br />
-
           <h2>
             Meetup-group for developers and anyone interested in general
             programming.
           </h2>
-
-          <br />
-          <br />
 
           <div className="button-wrapper">
             <a

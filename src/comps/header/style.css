@@ -1,16 +1,18 @@
 header {
-  min-height: 55vh;
-  width: 100%;
+  min-height: 65vh;
+  width: 95%;
+  margin-top: 2.5%;
+  margin: 0 auto;
   background-image: url("../../images/meetup-image-min.jpg");
   background-position: center;
   background-size: cover;
 }
 
 header .header-content {
-  min-height: 55vh;
+  margin-top: 2.5%;
+  min-height: 65vh;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(67, 143, 120, 0.8)), to(rgba(67, 143, 120, 0.6)));
-  background-image: linear-gradient(to right, rgba(67, 143, 120, 0.8), rgba(67, 143, 120, 0.6));
+  background: rgba(53, 53, 53, 0.685);
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,9 +43,11 @@ header .header-content h2 {
   font-weight: normal;
   width: 450px;
   line-height: 30px;
+  padding-top: 0.5rem;
 }
 
 header .header-content .button-wrapper {
+  padding-top: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

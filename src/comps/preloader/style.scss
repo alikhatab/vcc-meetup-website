@@ -1,0 +1,21 @@
+#preloader {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 8px solid #e0e0e0;
+  border-right-color: #f63f61;
+  animation: spin 1s ease-in-out infinite;
+  position: absolute;
+  left: calc(50% - 80px);
+  top: calc(50% - 80px);
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
