@@ -27,6 +27,9 @@
       text-transform: capitalize;
       font-weight: 500;
       margin-right: 1rem;
+      @media (max-width: 600px) {
+        display: none;
+      }
 
       span {
         font-weight: 500;

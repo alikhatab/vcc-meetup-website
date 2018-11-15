@@ -41,9 +41,11 @@ header .header-content h2 {
   font-size: 22px;
   text-align: center;
   font-weight: normal;
-  width: 450px;
+  max-width: 500px;
   line-height: 30px;
   padding-top: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 header .header-content .button-wrapper {

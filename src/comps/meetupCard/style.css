@@ -46,6 +46,12 @@
   margin-right: 1rem;
 }
 
+@media (max-width: 600px) {
+  .meetup-card .info h3 {
+    display: none;
+  }
+}
+
 .meetup-card .info h3 span {
   font-weight: 500;
 }
