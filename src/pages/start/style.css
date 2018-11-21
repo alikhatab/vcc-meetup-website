@@ -15,6 +15,15 @@
   padding-top: 50px;
 }
 
+.description {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  opacity: 0.85;
+  text-align: center;
+  line-height: 150%;
+}
+
 .members {
   display: -webkit-box;
   display: -ms-flexbox;
