@@ -53,17 +53,6 @@ class Start extends Component {
           </div>
         </Section>
         <Section>
-          <h1>Practicalities</h1>
-          <p className="description">
-            We aim to always have the meetup over at Expectrum in Västerås
-            Kopparbergsvägen 10. If the organizer cannot attend the meetup it
-            will then be hold at Espresso House Hantverkargatan in Västerås were
-            people can join anytime between 18.00 to 20.00 - If you need to get
-            in touch with anyone in the meetup-group make sure to join the Slack
-            group or call the following number: +46720173749 (Albin Groen).
-          </p>
-        </Section>
-        <Section>
           <h1>Upcoming meetups</h1>
 
           <div className="meetups">
