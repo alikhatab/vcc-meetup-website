@@ -24,7 +24,7 @@ class Start extends Component {
 
   componentDidMount() {
     axios
-      .get('https://personal-mail-api.tk/meetup/event')
+      .get('https://personal-mail-api.tk/meetup/events')
       .then(res => {
         this.setState({
           events: res.data,
@@ -34,7 +34,7 @@ class Start extends Component {
         console.log(err);
 
         const promise = airbrake.notify(
-          'Error: Could not fetch data from API!',
+          'Error: Could not fetch events data from API!',
         );
         promise.then(function(notice) {
           if (notice.id) {
@@ -54,6 +54,17 @@ class Start extends Component {
       })
       .catch(err => {
         console.log(err);
+
+        const promise = airbrake.notify(
+          'Error: Could not fetch members data from API!',
+        );
+        promise.then(function(notice) {
+          if (notice.id) {
+            console.log('notice id', notice.id);
+          } else {
+            console.log('notify failed', notice.error);
+          }
+        });
       });
   }
   render() {
