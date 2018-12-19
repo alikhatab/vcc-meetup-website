@@ -10,7 +10,7 @@ import './style.css';
 const airbrake = new AirbrakeClient({
   projectId: 208135,
   projectKey: 'fddc71dc1a8d1ae6fac705005a65b7d1',
-  environment: 'development',
+  environment: 'production'
 });
 
 class Start extends Component {
