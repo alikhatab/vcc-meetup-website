@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import AirbrakeClient from 'airbrake-js';
-import axios from 'axios';
-import Header from '../../comps/header';
-import Section from '../../comps/section';
-import MeetupCard from '../../comps/meetupCard';
-import Member from '../../comps/member';
-import './style.css';
+import React, { Component } from "react";
+import AirbrakeClient from "airbrake-js";
+import axios from "axios";
+import Header from "../../comps/header";
+import Section from "../../comps/section";
+import MeetupCard from "../../comps/meetupCard";
+import Member from "../../comps/member";
+import "./style.css";
 
 const airbrake = new AirbrakeClient({
   projectId: 208135,
-  projectKey: 'fddc71dc1a8d1ae6fac705005a65b7d1',
-  environment: 'production'
+  projectKey: "fddc71dc1a8d1ae6fac705005a65b7d1",
+  environment: "production"
 });
 
 class Start extends Component {
@@ -18,52 +18,40 @@ class Start extends Component {
     super();
     this.state = {
       events: [],
-      members: [],
+      members: []
     };
   }
 
   componentDidMount() {
     axios
-      .get('https://personal-mail-api.tk/meetup/events')
+      .get("https://personal-mail-api.tk/meetup/event")
       .then(res => {
         this.setState({
-          events: res.data,
+          events: res.data
         });
       })
-      .catch(err => {
-        console.log(err);
-
+      .catch(() => {
         const promise = airbrake.notify(
-          'Error: Could not fetch events data from API!',
+          "Error: Could not fetch events data from API!"
         );
-        promise.then(function(notice) {
-          if (notice.id) {
-            console.log('notice id', notice.id);
-          } else {
-            console.log('notify failed', notice.error);
-          }
+        promise.then(notice => {
+          // Send notice
         });
       });
 
     axios
-      .get('https://personal-mail-api.tk/meetup/members')
+      .get("https://personal-mail-api.tk/meetup/members")
       .then(res => {
         this.setState({
-          members: res.data,
+          members: res.data
         });
       })
-      .catch(err => {
-        console.log(err);
-
+      .catch(() => {
         const promise = airbrake.notify(
-          'Error: Could not fetch members data from API!',
+          "Error: Could not fetch members data from API!"
         );
-        promise.then(function(notice) {
-          if (notice.id) {
-            console.log('notice id', notice.id);
-          } else {
-            console.log('notify failed', notice.error);
-          }
+        promise.then(notice => {
+          // Sent notice
         });
       });
   }
@@ -88,7 +76,7 @@ class Start extends Component {
             {events
               .filter(
                 event =>
-                  events.indexOf(event) < 5 && event.status === 'upcoming',
+                  events.indexOf(event) < 5 && event.status === "upcoming"
               )
               .map(event => (
                 <MeetupCard key={event.id} event={event} />

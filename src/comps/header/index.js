@@ -17,7 +17,7 @@ class Header extends Component {
     if (email !== null && email.includes("@")) {
       axios
         .post("https://personal-mail-api.tk/email/sendMail", {
-          email: email,
+          email,
           text: "Jag vill gå med i slack-gruppen för Västerås Coffee and Code!"
         })
         .then(response => {
@@ -27,7 +27,7 @@ class Header extends Component {
             });
           }
         })
-        .catch(error => {
+        .catch(() => {
           this.setState({
             status: "err"
           });

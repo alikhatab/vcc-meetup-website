@@ -1,10 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.css";
 
-class Preloader extends Component {
-  render() {
-    return <div className="preloader" />;
-  }
-}
+const Preloader = () => <div className="preloader" />;
 
 export default Preloader;
