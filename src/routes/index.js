@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import Start from '../pages/start/index';
+import Start from "../pages/start/index";
 
 export default () => (
   <div>
