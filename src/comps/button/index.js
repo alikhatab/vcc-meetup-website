@@ -1,15 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.css";
 
-class Button extends Component {
-  render() {
-    const { secondary, children } = this.props;
-    return (
-      <button className={secondary ? "buttonSecondary" : "button"}>
-        {children}
-      </button>
-    );
-  }
-}
+const Button = props => {
+  const { secondary, children } = props;
+
+  return (
+    <button className={secondary ? "buttonSecondary" : "button"}>
+      {children}
+    </button>
+  );
+};
 
 export default Button;
