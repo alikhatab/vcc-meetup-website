@@ -37,7 +37,7 @@ class Header extends Component {
         status: "err"
       });
     }
-  }*/
+  } */
 
   render() {
     return (
