@@ -24,7 +24,7 @@ class Start extends Component {
 
   componentDidMount() {
     axios
-      .get("https://personal-mail-api.tk/meetup/events")
+      .get("https://personal-mail-api.tk/events")
       .then(res => {
         this.setState({
           events: res.data
@@ -40,7 +40,7 @@ class Start extends Component {
       });
 
     axios
-      .get("https://personal-mail-api.tk/meetup/members")
+      .get("https://personal-mail-api.tk/members")
       .then(res => {
         this.setState({
           members: res.data

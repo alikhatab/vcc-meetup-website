@@ -11,7 +11,7 @@ class Header extends Component {
     };
   }
 
-  joinSlack() {
+  /* joinSlack() {
     const email = prompt("Enter email here:");
 
     if (email !== null && email.includes("@")) {
@@ -37,7 +37,7 @@ class Header extends Component {
         status: "err"
       });
     }
-  }
+  }*/
 
   render() {
     return (
@@ -49,26 +49,27 @@ class Header extends Component {
             programming.
           </h2>
 
-          <div className="button-wrapper">
-            <a
-              href="https://www.meetup.com/Vasteras-Coffee-and-Code/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button secondary>Join Meetup Group</Button>
-            </a>
+          <br />
+          <br />
 
-            <div
-              onClick={() => {
-                this.setState({
-                  status: 0
-                });
-                this.joinSlack();
-              }}
-            >
-              <Button secondary>Join Slack Group</Button>
-            </div>
-          </div>
+          <a
+            href="https://www.meetup.com/Vasteras-Coffee-and-Code/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button secondary>Join Meetup Group</Button>
+          </a>
+
+          {/* <div */}
+          {/*   onClick={() => { */}
+          {/*     this.setState({ */}
+          {/*       status: 0 */}
+          {/*     }); */}
+          {/*     this.joinSlack(); */}
+          {/*   }} */}
+          {/* > */}
+          {/*   <Button secondary>Join Slack Group</Button> */}
+          {/* </div> */}
 
           {this.state.status === 200 && (
             <div className="status-container">
