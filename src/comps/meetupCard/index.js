@@ -47,7 +47,7 @@ const MeetupCard = props => {
               </h4>
             </div>
           </div>
-          <p>{description.slice(3, description.length - 5)}</p>
+          <p>{description}</p>
         </div>
       </a>
     </div>

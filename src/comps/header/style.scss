@@ -1,6 +1,5 @@
 header {
   min-height: 65vh;
-  width: 95%;
   margin-top: 2.5%;
   margin: 0 auto;
   background-image: url("../../images/meetup-image-min.jpg");
@@ -8,7 +7,6 @@ header {
   background-size: cover;
 
   .header-content {
-    margin-top: 2.5%;
     min-height: 65vh;
     width: 100%;
     background: rgba(53, 53, 53, 0.685);
@@ -37,26 +35,14 @@ header {
       padding-right: 2rem;
     }
 
-    .button-wrapper {
-      padding-top: 2.5rem;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      max-width: 410px;
-      justify-content: space-between;
-      width: 100%;
-      @media (max-width: 600px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-
     h3 {
       color: white;
       text-align: center;
       padding-top: 1.5rem;
+    }
+
+    button {
+      margin-top: 2rem;
     }
 
     .status-container {

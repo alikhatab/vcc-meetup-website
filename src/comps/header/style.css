@@ -1,6 +1,5 @@
 header {
   min-height: 65vh;
-  width: 95%;
   margin-top: 2.5%;
   margin: 0 auto;
   background-image: url("../../images/meetup-image-min.jpg");
@@ -9,7 +8,6 @@ header {
 }
 
 header .header-content {
-  margin-top: 2.5%;
   min-height: 65vh;
   width: 100%;
   background: rgba(53, 53, 53, 0.685);
@@ -48,47 +46,14 @@ header .header-content h2 {
   padding-right: 2rem;
 }
 
-header .header-content .button-wrapper {
-  padding-top: 2.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 410px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-}
-
-@media (max-width: 600px) {
-  header .header-content .button-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
 header .header-content h3 {
   color: white;
   text-align: center;
   padding-top: 1.5rem;
+}
+
+header .header-content button {
+  margin-top: 2rem;
 }
 
 header .header-content .status-container {
