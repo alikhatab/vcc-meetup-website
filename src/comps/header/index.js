@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import Button from "../button";
+import ill1 from "../../images/ill-1.png";
+import ill2 from "../../images/ill-2.png";
+import ill3 from "../../images/ill-3.png";
 import "./style.css";
 
 class Header extends Component {
@@ -41,15 +44,19 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <div className="header-content">
-          <h1>Coffee & Code</h1>
-          <h2>
-            Meetup-group for developers and anyone interested in general
-            programming.
-          </h2>
+        <h4>Coffee&Code™</h4>
 
-          <br />
-          <br />
+        <div className="header-content">
+          <img src={ill1} className="illustration" alt="" />
+          <img src={ill2} className="illustration2" alt="" />
+          <img src={ill3} className="illustration3" alt="" />
+
+          <h1>
+            Träffas och koda. Välkommen till Coffee and Code.
+            <span role="img" aria-label="emoji">
+              ⚡️
+            </span>
+          </h1>
 
           <a
             href="https://www.meetup.com/Vasteras-Coffee-and-Code/"

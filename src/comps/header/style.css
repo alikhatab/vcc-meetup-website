@@ -1,16 +1,30 @@
 header {
-  min-height: 65vh;
+  min-height: 70vh;
   margin-top: 2.5%;
   margin: 0 auto;
-  background-image: url("../../images/meetup-image-min.jpg");
+  background-image: url("../../images/meetup-image.png");
   background-position: center;
   background-size: cover;
 }
 
+header h4 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: italic;
+  text-align: center;
+  padding-top: 2rem;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  font-size: 2em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 header .header-content {
-  min-height: 65vh;
+  min-height: 70vh;
   width: 100%;
-  background: rgba(53, 53, 53, 0.685);
+  background: rgba(53, 53, 53, 0.45);
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,31 +39,61 @@ header .header-content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .header-content .illustration {
+  width: 120px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+@media (max-width: 768px) {
+  header .header-content .illustration {
+    display: none;
+  }
+}
+
+header .header-content .illustration2 {
+  width: 120px;
+  position: absolute;
+  top: 50%;
+  left: 28%;
+}
+
+@media (max-width: 768px) {
+  header .header-content .illustration2 {
+    display: none;
+  }
+}
+
+header .header-content .illustration3 {
+  width: 120px;
+  position: absolute;
+  top: 15%;
+  right: 10%;
+}
+
+@media (max-width: 768px) {
+  header .header-content .illustration3 {
+    display: none;
+  }
 }
 
 header .header-content h1 {
-  font-size: 70px;
-  font-weight: bolder;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 1px;
-}
-
-header .header-content h2 {
-  font-size: 22px;
-  text-align: center;
-  font-weight: normal;
-  max-width: 500px;
-  line-height: 30px;
-  padding-top: 0.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-header .header-content h3 {
+  font-size: 3.5em;
   color: white;
   text-align: center;
-  padding-top: 1.5rem;
+  font-weight: 600;
+  font-family: "IBM Plex Sans", sans-serif;
+  letter-spacing: 1.5px;
+  max-width: 1000px;
+  line-height: 130%;
+  z-index: 1000 !important;
 }
 
 header .header-content button {
