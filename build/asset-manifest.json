@@ -1,8 +1,11 @@
 {
-  "main.css": "static/css/main.188fe7b5.css",
-  "main.css.map": "static/css/main.188fe7b5.css.map",
-  "main.js": "static/js/main.411d28b3.js",
-  "main.js.map": "static/js/main.411d28b3.js.map",
+  "main.css": "static/css/main.b1c6f7d1.css",
+  "main.css.map": "static/css/main.b1c6f7d1.css.map",
+  "main.js": "static/js/main.5082af53.js",
+  "main.js.map": "static/js/main.5082af53.js.map",
   "static/media/coding.jpg": "static/media/coding.1b73f1cb.jpg",
-  "static/media/meetup-image-min.jpg": "static/media/meetup-image-min.982be58b.jpg"
+  "static/media/ill-1.png": "static/media/ill-1.3e237e80.png",
+  "static/media/ill-2.png": "static/media/ill-2.fd4c0458.png",
+  "static/media/ill-3.png": "static/media/ill-3.1f520d84.png",
+  "static/media/meetup-image.png": "static/media/meetup-image.9612c7a2.png"
 }
