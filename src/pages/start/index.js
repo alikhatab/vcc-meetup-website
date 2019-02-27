@@ -35,7 +35,7 @@ class Start extends Component {
           "Error: Could not fetch events data from API!"
         );
         promise.then(notice => {
-          // Send notice
+          this.setState({ notice });
         });
       });
 
@@ -51,15 +51,21 @@ class Start extends Component {
           "Error: Could not fetch members data from API!"
         );
         promise.then(notice => {
-          // Sent notice
+          this.setState({ notice });
         });
       });
   }
   render() {
-    const { events, members } = this.state;
+    const { events, members, notice } = this.state;
 
     return (
       <div>
+        {notice && (
+          <div className="notice">
+            {notice.errors[0].message}{" "}
+            <span onClick={() => this.setState({ notice: null })}>Close</span>
+          </div>
+        )}
         <Header />
         <Section>
           <h1>Members</h1>

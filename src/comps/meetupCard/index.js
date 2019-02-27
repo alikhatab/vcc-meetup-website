@@ -47,7 +47,7 @@ const MeetupCard = props => {
               </h4>
             </div>
           </div>
-          <p>{description}</p>
+          <p>{description.replace(/<p>/g, "").replace(/<\/p>/g, "")}</p>
         </div>
       </a>
     </div>

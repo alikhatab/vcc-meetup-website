@@ -85,7 +85,7 @@ header .header-content .illustration3 {
 }
 
 header .header-content h1 {
-  font-size: 3.5em;
+  font-size: 3.25em;
   color: white;
   text-align: center;
   font-weight: 600;
@@ -94,6 +94,13 @@ header .header-content h1 {
   max-width: 1000px;
   line-height: 130%;
   z-index: 1000 !important;
+}
+
+@media (max-width: 768px) {
+  header .header-content h1 {
+    padding-top: 3rem;
+    font-size: 2.5em;
+  }
 }
 
 header .header-content button {

@@ -1,3 +1,22 @@
+.notice {
+  background: tomato;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 1rem;
+  border-radius: 3px;
+  color: white;
+
+  span {
+    padding-left: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
 .meetups {
   display: flex;
   flex-direction: column;
