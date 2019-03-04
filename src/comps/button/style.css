@@ -9,8 +9,6 @@
   cursor: pointer;
   -webkit-transition: 0.1s ease-in 0s;
   transition: 0.1s ease-in 0s;
-  -webkit-box-shadow: 0px 10px 20px rgba(34, 34, 34, 0.3);
-          box-shadow: 0px 10px 20px rgba(34, 34, 34, 0.3);
 }
 
 .button:hover {

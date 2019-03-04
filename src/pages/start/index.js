@@ -5,6 +5,8 @@ import Header from "../../comps/header";
 import Section from "../../comps/section";
 import MeetupCard from "../../comps/meetupCard";
 import Member from "../../comps/member";
+import News from "../../comps/news";
+import Button from "../../comps/button";
 import "./style.css";
 
 const airbrake = new AirbrakeClient({
@@ -68,15 +70,27 @@ class Start extends Component {
         )}
         <Header />
         <Section>
-          <h1>Members</h1>
+          <h1>Nyheter och information</h1>
+          <News />
+        </Section>
+        <Section>
+          <h1>Medlemmar</h1>
           <div className="members">
             {members.map(member => (
               <Member key={member} data={member} />
             ))}
           </div>
+
+          <a
+            href="https://www.meetup.com/Vasteras-Coffee-and-Code/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button secondary>Gå med i gruppen</Button>
+          </a>
         </Section>
         <Section>
-          <h1>Upcoming meetups</h1>
+          <h1>Kommande events</h1>
 
           <div className="meetups">
             {events

@@ -1,0 +1,73 @@
+.logo {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: italic;
+  text-align: center;
+  padding-top: 2rem;
+  color: #222;
+  font-weight: 600;
+  position: absolute;
+  font-size: 1.5em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.back {
+  position: fixed;
+  left: 2rem;
+  top: 2rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 50px;
+  background: lighten(#dd4060, 40%);
+  cursor: pointer;
+  transition: 0.1s ease-out 0s;
+  &:hover {
+    background: lighten(#dd4060, 35%);
+    transition: 0.1s ease-out 0s;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.newsItem {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 125px;
+  padding-bottom: 125px;
+
+  h1 {
+    padding-bottom: 1rem;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #dd4060;
+  }
+
+  .gif {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h3 {
+    opacity: 0.5;
+    padding-bottom: 2rem;
+  }
+
+  p {
+    line-height: 150%;
+  }
+
+  h2,
+  button {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+
+  button {
+    margin-top: 2rem;
+  }
+}

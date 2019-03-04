@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Button from "../button";
 import ill1 from "../../images/ill-1.png";
 import ill2 from "../../images/ill-2.png";
@@ -44,7 +45,9 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <h4>Coffee&Code™</h4>
+        <Link to="/" href="/">
+          <h4>Coffee&Code™</h4>
+        </Link>
 
         <div className="header-content">
           <img src={ill1} className="illustration" alt="" />
@@ -52,7 +55,7 @@ class Header extends Component {
           <img src={ill3} className="illustration3" alt="" />
 
           <h1>
-            Träffas och koda. Välkommen till Coffee and Code.
+            Träffa likasinnade och koda. Välkommen till Coffee and Code.
             <span role="img" aria-label="emoji">
               ⚡️
             </span>
@@ -63,7 +66,7 @@ class Header extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button secondary>Join Meetup Group</Button>
+            <Button secondary>Gå med i gruppen</Button>
           </a>
 
           {/* <div */}
