@@ -38,6 +38,8 @@
 
 .newsItem {
   width: 100%;
+  padding: 1.5rem;
+  box-sizing: border-box;
   max-width: 1000px;
   margin: 0 auto;
   padding-top: 125px;
