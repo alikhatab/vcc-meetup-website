@@ -8,9 +8,18 @@ const news = [
     route: "/ny-lokal"
   },
   {
-    title: "Meetup hålls nu i ny lokal",
+    title: "",
     text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quaerat quod ad? Corporis dignissimos repudiandae, deleniti perferendis animi velit fugit minima dicta molestiae aliquam accusantium quis aliquid possimus ipsa quasi ad. Incidunt vel delectus iste sunt! Consequatur sed eos necessitatibus quas, exercitationem excepturi iste ipsam accusantium cumque vitae eveniet, harum ratione reprehenderit pariatur. Adipisci aut eos exercitationem perspiciatis itaque maxime hic labore ullam magnam modi? Deleniti nihil laborum vero beatae, commodi quod illum facere voluptatem vitae, inventore reiciendis omnis a iste cumque itaque voluptas accusantium! Voluptas saepe adipisci consequatur omnis? Adipisci quo expedita vero sapiente nemo quam quae iure vitae.",
+      "",
+    date: "2019-01-01",
+    background: "#E2736C",
+    placeholder: true
+    // route: "/"
+  },
+  {
+    title: "",
+    text:
+      "",
     date: "2019-01-01",
     background: "#E2736C",
     placeholder: true
@@ -19,16 +28,7 @@ const news = [
   {
     title: "Meetup hålls nu i ny lokal",
     text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quaerat quod ad? Corporis dignissimos repudiandae, deleniti perferendis animi velit fugit minima dicta molestiae aliquam accusantium quis aliquid possimus ipsa quasi ad. Incidunt vel delectus iste sunt! Consequatur sed eos necessitatibus quas, exercitationem excepturi iste ipsam accusantium cumque vitae eveniet, harum ratione reprehenderit pariatur. Adipisci aut eos exercitationem perspiciatis itaque maxime hic labore ullam magnam modi? Deleniti nihil laborum vero beatae, commodi quod illum facere voluptatem vitae, inventore reiciendis omnis a iste cumque itaque voluptas accusantium! Voluptas saepe adipisci consequatur omnis? Adipisci quo expedita vero sapiente nemo quam quae iure vitae.",
-    date: "2019-01-01",
-    background: "#E2736C",
-    placeholder: true
-    // route: "/"
-  },
-  {
-    title: "Meetup hålls nu i ny lokal",
-    text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quaerat quod ad? Corporis dignissimos repudiandae, deleniti perferendis animi velit fugit minima dicta molestiae aliquam accusantium quis aliquid possimus ipsa quasi ad. Incidunt vel delectus iste sunt! Consequatur sed eos necessitatibus quas, exercitationem excepturi iste ipsam accusantium cumque vitae eveniet, harum ratione reprehenderit pariatur. Adipisci aut eos exercitationem perspiciatis itaque maxime hic labore ullam magnam modi? Deleniti nihil laborum vero beatae, commodi quod illum facere voluptatem vitae, inventore reiciendis omnis a iste cumque itaque voluptas accusantium! Voluptas saepe adipisci consequatur omnis? Adipisci quo expedita vero sapiente nemo quam quae iure vitae.",
+      "",
     date: "2019-01-01",
     placeholder: true
     // route: "/"
@@ -36,7 +36,7 @@ const news = [
   {
     title: "Meetup hålls nu i ny lokal",
     text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quaerat quod ad? Corporis dignissimos repudiandae, deleniti perferendis animi velit fugit minima dicta molestiae aliquam accusantium quis aliquid possimus ipsa quasi ad. Incidunt vel delectus iste sunt! Consequatur sed eos necessitatibus quas, exercitationem excepturi iste ipsam accusantium cumque vitae eveniet, harum ratione reprehenderit pariatur. Adipisci aut eos exercitationem perspiciatis itaque maxime hic labore ullam magnam modi? Deleniti nihil laborum vero beatae, commodi quod illum facere voluptatem vitae, inventore reiciendis omnis a iste cumque itaque voluptas accusantium! Voluptas saepe adipisci consequatur omnis? Adipisci quo expedita vero sapiente nemo quam quae iure vitae.",
+      "",
     date: "2019-01-01",
     background: "#E2736C",
     placeholder: true
