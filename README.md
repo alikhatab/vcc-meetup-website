@@ -1,6 +1,8 @@
 # Västerås Coffee & Code
 
   The official website for Västerås Coffee &amp; Code
+  
+  https://coffeeandcode.se/
 
 ## How to contribute
 
